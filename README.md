@@ -23,7 +23,7 @@ Each pattern is shipped as a pair:
 |---|---|---|
 | **[auth](./auth/)** | ✅ ready | 6-digit org passcode + email domain allow-list + per-IP rate limit + magic-link OTP + geo-IP gate. Five layers of defence-in-depth on the login flow. |
 | **[mcp-server](./mcp-server/)** | ✅ ready | Bearer-token agent API + per-user keys + sibling MCP server for Claude Desktop. Federated fleet hub. Builds on conventions 01–04. |
-| **design** | 🚧 planned | Light-only TMS-aligned design tokens, page header + section card + status badge components, ScrapeGlobal-parity classes. |
+| **[design](./design/)** | ✅ ready | Shared visual language — orange `#e0944d` accent, slate neutrals, Material Symbols, 12-component family (PageHeader, Nav with hamburger, StatusBadge, TabPills, Toast, etc.), system fonts, light-only, focus rings + a11y baseline. |
 
 ## Conventions
 
