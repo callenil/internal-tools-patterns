@@ -22,8 +22,8 @@ Each pattern is shipped as a pair:
 | Pattern | Status | What it gives you |
 |---|---|---|
 | **[auth](./auth/)** | ✅ ready | 6-digit org passcode + email domain allow-list + per-IP rate limit + magic-link OTP + geo-IP gate. Five layers of defence-in-depth on the login flow. |
+| **[mcp-server](./mcp-server/)** | ✅ ready | Bearer-token agent API + per-user keys + sibling MCP server for Claude Desktop. Federated fleet hub. Builds on conventions 01–04. |
 | **design** | 🚧 planned | Light-only TMS-aligned design tokens, page header + section card + status badge components, ScrapeGlobal-parity classes. |
-| **mcp-server** | 🚧 planned | Bearer-token-auth MCP server scaffold for exposing internal-tool data to Claude Desktop. |
 
 ## Conventions
 
