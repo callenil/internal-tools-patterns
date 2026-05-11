@@ -25,6 +25,19 @@ Each pattern is shipped as a pair:
 | **design** | 🚧 planned | Light-only TMS-aligned design tokens, page header + section card + status badge components, ScrapeGlobal-parity classes. |
 | **mcp-server** | 🚧 planned | Bearer-token-auth MCP server scaffold for exposing internal-tool data to Claude Desktop. |
 
+## Conventions
+
+Cross-cutting standards every project should follow so they
+interoperate cleanly. Read these BEFORE building a new project or
+adding a cross-project integration.
+
+| Convention | What it covers |
+|---|---|
+| **[01-agent-api-contract](./conventions/01-agent-api-contract.md)** | `/api/agent/*` URL shape, Bearer-token auth, request/response envelopes, HTTP status codes, audit-logging requirement. The wire contract every project speaks. |
+| **[02-env-var-naming](./conventions/02-env-var-naming.md)** | `<PROJECT_SLUG>_API_URL` + `<PROJECT_SLUG>_API_KEY` for outbound calls. Slug registry. Public-vs-server-only rules. |
+| **[03-service-registry](./conventions/03-service-registry.md)** | Living list of every project in the fleet — slug, URL, status, exposed endpoints, owner. Updated as projects come online. |
+| **[04-audit-log-schema](./conventions/04-audit-log-schema.md)** | Uniform `audit_log` table schema and action-naming convention. Cross-project call tracing via `caller_project` field. |
+
 ---
 
 ## How to use
